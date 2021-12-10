@@ -1,0 +1,20 @@
+.link{
+    position: relative;
+    cursor: pointer;
+}
+.link::after{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(77, 75, 75);
+    transition: width 0.4s ease-out;
+}
+.link:hover.link::after{
+    width: 100%;
+}
+body a  {
+    text-decoration: none;
+}
