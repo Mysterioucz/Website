@@ -28,3 +28,11 @@
 body a  {
     text-decoration: none;
 }
+body .container-sm{
+    width: 40%;
+
+}
+body .margin-card .card{
+    margin-right:20px;
+    
+}
