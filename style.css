@@ -29,10 +29,17 @@ body a  {
     text-decoration: none;
 }
 body .container-sm{
-    width: 40%;
+    width: 80%;
 
 }
 body .margin-card .card{
     margin-right:20px;
     
+}
+body .search-margin{
+    margin-right: auto;
+    margin-left: auto;
+}
+.Feedback{
+    font-family: 'Work Sans', sans-serif;
 }
