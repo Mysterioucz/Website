@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&family=Work+Sans:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--------------------------------------------navbar-------------------------------------------->
@@ -121,7 +121,40 @@
           </div>
         </div>
       </div>
- <!--------------------------------------------Footer-------------------------------------------->      
+      <!--------------------------------------------Question Section-------------------------------------------->
+      <div class="container justify-content-center">
+        <div class="container bg-white ">
+        <div>
+          <h3 class="text-center mt-3 Feedback">Ask Us</h3>
+        </div>
+        <form method="post" autocomplete="off" name="hello-sheet">
+          <div class="mb-3">
+          <label for="name" class="form-label" > Question </label>
+          <textarea type="text" class="form-control " row="3" id="name" placeholder="ทำงดีครับ" name="Topic"></textarea>
+          
+          
+          </div>
+          <div class="mb-3">
+          <label for="name" class="form-label" > Your Contact </label>
+          <textarea type="text" class="form-control " row="3" id="name" placeholder="Fb,Ig" name="Detail"></textarea>
+          
+          
+          </div>
+        <button type="submit" name="submit" value="Send message" class="btn btn-outline-primary btn-lg" >Submit</button>
+      </form>
+      </div></div>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyrMdv4xrdjgUYgHIKw5A07vPdEtqeTvxR05xvV5GPOcnDIoJnEDTTRYOmU3CqOec0jGQ/exec'
+        const form = document.forms['hello-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("ขอบคุณสำหรับความคิดเห็น.."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <!--------------------------------------------Footer-------------------------------------------->      
  <footer
  class="text-center text-lg-start bg-light text-dark mt-5"
  

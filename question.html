@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&family=Work+Sans:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--------------------------------------------navbar-------------------------------------------->
@@ -121,7 +121,34 @@
           </div>
         </div>
       </div>
- <!--------------------------------------------Footer-------------------------------------------->      
+      <!--------------------------------------------Question Section-------------------------------------------->
+      <div class="pt-4 "></div>
+      <div class="container justify-content-center">
+        <div class="container bg-white ">
+        <div>
+          <h3 class="text-center mt-3 Feedback">Ask Us</h3>
+        </div>
+        <form method="post" autocomplete="off" name="hello-sheet">
+          <div class="input-group mb-3 pt-5">
+            <label class="input-group-text" for="name" > Topic </label >
+              <select class="form-select " id="inputGroupSelect01" name="Topic">
+                  <option selected>เลือกหัวข้อ</option>
+                  <option value="ครู">ครู</option>
+                  <option value="สวัสดิการ">สวัสดิการ</option>
+                  <option value="กน">กน</option>
+                  <option value="สถานที่">สถานที่</option>
+                </select>
+          </div>
+          <div class="mb-3">
+          <label for="name" class="form-label" > Details </label>
+          <textarea type="text" class="form-control " row="3" id="name" placeholder="อยากเห็นประธานนักเรียนตกน้ำจังเลยครับ" name="Detail"></textarea>
+          
+          
+          </div>
+        <button type="submit" name="submit" value="Send message" class="btn btn-outline-primary btn-lg" >Submit</button>
+      </form>
+      </div></div>
+      <!--------------------------------------------Footer-------------------------------------------->      
  <footer
  class="text-center text-lg-start bg-light text-dark mt-5"
  
