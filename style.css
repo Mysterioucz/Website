@@ -43,3 +43,7 @@ body .search-margin{
 .Feedback{
     font-family: 'Work Sans', sans-serif;
 }
+body .card{
+    margin-left: auto;
+    margin-right: auto;
+}
